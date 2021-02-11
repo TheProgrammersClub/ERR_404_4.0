@@ -37,10 +37,10 @@ function countDownTimerCallback(t) {
 
 	let sec = Math.floor((t - t2) / (1000));
 
-	document.getElementById('day').innerHTML = Math.floor(day);
-	document.getElementById('hour').innerHTML = Math.floor(hour);
-	document.getElementById('min').innerHTML = Math.floor(min);
-	document.getElementById('sec').innerHTML = Math.floor(sec);
+	document.getElementById('day').innerHTML = day;
+	document.getElementById('hour').innerHTML = hour;
+	document.getElementById('min').innerHTML = min;
+	document.getElementById('sec').innerHTML = sec;
 	return true;
 }
 
