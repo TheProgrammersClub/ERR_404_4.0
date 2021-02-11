@@ -1,7 +1,6 @@
-function setSmartInterval(intervalEventCallback, interval, endCallback=null) {
+function setSmartInterval(intervalEventCallback, t, interval, endCallback=null) {
 	let x = setInterval(function() {
-		let doInterval = intervalEventCallback();
-		if (!doInterval) {
+		if (!intervalEventCallback(t)) {
 			clearInterval(x);
 			if (typeof endCallback === 'function') {
 				endCallback();
@@ -11,49 +10,46 @@ function setSmartInterval(intervalEventCallback, interval, endCallback=null) {
 }
 
 // TODO: Change to event date
-let event_date = new Date(new Date().getTime() + 10 * 1000);
+let start_date = new Date(new Date().getTime() + 10 * 1000);
+let end_date = new Date(new Date().getTime() + 20 * 1000);
+let result_date = new Date(new Date().getTime() + 30 * 1000);
 
-function countDownTimerCallback() {
+function countDownTimerCallback(t) {
 
-	// let event_date = new Date(new Date().getTime() + 5 * 1000);
 	let curr_date = new Date();
-	let t1 = event_date.getTime();
 	let t2 = curr_date.getTime();
-	let diff = t1 - t2;
+	let diff = t.getTime() - t2;
 
-	let day = Math.floor((t1 - t2) / (24 * 60 * 60 * 1000));
-	t1 = t1 - day * 24 * 60 * 60 * 1000;
-	let hour = Math.floor((t1 - t2) / (60 * 60 * 1000));
-	t1 = t1 - hour * 60 * 60 * 1000;
-	let min = Math.floor((t1 - t2) / (60 * 1000));
-	t1 = t1 - min * 60 * 1000;
-	let sec = Math.floor((t1 - t2) / (1000));
+	if (diff <= 0) { return false;}
 
-	if (diff < 0) {
-		return false;
-	}
+	let day = (diff) / (24 * 60 * 60 * 1000);
+	let hour = (diff) / (60 * 60 * 1000) - day;
+	let min = (diff) / (60 * 1000) - hour;
+	let sec = (diff) / (1000) - min;
 
-	document.getElementById('day').innerHTML = day;
-	document.getElementById('hour').innerHTML = hour;
-	document.getElementById('min').innerHTML = min;
-	document.getElementById('sec').innerHTML = sec;
+	document.getElementById('day').innerHTML = Math.floor(day);
+	document.getElementById('hour').innerHTML = Math.floor(hour);
+	document.getElementById('min').innerHTML = Math.floor(min);
+	document.getElementById('sec').innerHTML = Math.floor(sec);
 	return true;
-	// console.log(event_date + "\n" + curr_date + "\n" + diff);
-	// console.log(day + "\n" + hour + "\n" + min + "\n" + sec);
 }
+
 function countDownTimerEndCallbackBase() {
+	document.getElementById('countdown-text').innerHTML = "Err404 4.0 ended";
 	document.getElementById('day').innerHTML = "0";
 	document.getElementById('hour').innerHTML = "0";
 	document.getElementById('min').innerHTML = "0";
 	document.getElementById('sec').innerHTML = "0";
 }
 
-function countDownTimerEndCallback() {
-	countDownTimerEndCallbackBase();
-	alert("Error 404! Error 404! Participant not found!");
-	// TODO: Change to event end date
-	event_date = new Date(new Date().getTime() + 10 * 1000);
-	setSmartInterval(countDownTimerCallback, 1000, countDownTimerEndCallbackBase);
+function endEndCallBack() {
+	setSmartInterval(countDownTimerCallback, result_date, 1000, countDownTimerEndCallbackBase);
+	document.getElementById('countdown-text').innerHTML = "Results will be declared in";
 }
 
-setSmartInterval(countDownTimerCallback, 1000, countDownTimerEndCallback);
+function endStartCallBack() {
+	setSmartInterval(countDownTimerCallback, end_date, 1000, endEndCallBack);
+	document.getElementById('countdown-text').innerHTML = "Err404 4.0 Ends in";
+}
+
+setSmartInterval(countDownTimerCallback, start_date, 1000, endStartCallBack);
