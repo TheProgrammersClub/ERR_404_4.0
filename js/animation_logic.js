@@ -27,11 +27,6 @@ jQuery(document).ready(function($) {
 		viewFactor: 0.5,
 	};
 
-	sr.reveal(".trophy-badge", scale_up_option);
-	sr.reveal(".domain_icon", scale_up_option);
-
-	sr.reveal(".side-gfx", slide_in_right_option);
-
 	// sr.reveal(".light-heading", slide_up_option);
 	// sr.reveal(".dark-heading", slide_up_option);
 
