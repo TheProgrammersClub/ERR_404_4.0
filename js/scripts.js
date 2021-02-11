@@ -162,9 +162,7 @@ function loadProgress() {
 		scale: 1,
 	};
 	sr.reveal(".main-logo", main_pop_up_options);
-	sr.reveal(".trophy-badge", scale_up_option);
-	sr.reveal(".domain_icon", scale_up_option);
-	sr.reveal(".side-gfx", slide_in_right_option);
+	setScrollAnimations();
 }
 
 
