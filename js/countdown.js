@@ -16,21 +16,31 @@ let result_date = new Date(new Date().getTime() + 30 * 1000);
 
 function countDownTimerCallback(t) {
 
+	t = t.getTime();
+
 	let curr_date = new Date();
 	let t2 = curr_date.getTime();
-	let diff = t.getTime() - t2;
+	let diff = t - t2;
 
 	if (diff <= 0) { return false;}
 
-	let day = (diff) / (24 * 60 * 60 * 1000);
-	let hour = (diff) / (60 * 60 * 1000) - day;
-	let min = (diff) / (60 * 1000) - hour;
-	let sec = (diff) / (1000) - min;
+	// each result is subtracted from t so that later values can be calculated correctly!
 
-	document.getElementById('day').innerHTML = Math.floor(day);
-	document.getElementById('hour').innerHTML = Math.floor(hour);
-	document.getElementById('min').innerHTML = Math.floor(min);
-	document.getElementById('sec').innerHTML = Math.floor(sec);
+	let day = Math.floor((t - t2) / (86400000));
+	t = t - day * 86400000; // 24 * 60 * 60 * 1000
+
+	let hour = Math.floor((t - t2) / (3600000));
+	t = t - hour * 3600000; // 60 * 60 * 1000
+
+	let min = Math.floor((t - t2) / (60000));
+	t = t - min * 60000; // 60 * 1000
+
+	let sec = Math.floor((t - t2) / (1000));
+
+	document.getElementById('day').innerHTML = day;
+	document.getElementById('hour').innerHTML = hour;
+	document.getElementById('min').innerHTML = min;
+	document.getElementById('sec').innerHTML = sec;
 	return true;
 }
 
