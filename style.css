@@ -146,7 +146,7 @@ a:hover {
 
 .countdown {
   width: 100vw;
-  height: 155px;
+  height: 165px;
   z-index: 9;
   bottom: 0;
   margin-bottom: -30px;
@@ -155,7 +155,7 @@ a:hover {
 }
 
 #countdown-text {
-  padding-top: 10px;
+  padding-top: 20px;
   font-size: x-large;
 }
 
