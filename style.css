@@ -24,7 +24,7 @@ a:hover {
   height: 250px;
   width: 80px;
   -webkit-box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
-          box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
+  box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
   visibility: visible;
 }
 
@@ -46,8 +46,8 @@ a:hover {
 
 .navbar--title h4 {
   -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
   letter-spacing: 0.34em;
   text-transform: uppercase;
   font-size: 1.1em;
@@ -62,7 +62,7 @@ a:hover {
   transition: all 0.4s ease-out;
   opacity: 1;
   -webkit-box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
-          box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
+  box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
   background: #212121;
   z-index: 8;
 }
@@ -99,8 +99,8 @@ a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   margin-top: 30px;
 }
@@ -116,12 +116,12 @@ a:hover {
 .nav--open-menu a:hover {
   background: #212121;
   -webkit-box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
-          box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
+  box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
 }
 
 .close {
   -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
+  transform: translateX(-300px);
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   opacity: 0;
@@ -137,7 +137,7 @@ a:hover {
   background: #212121;
   color: #64ffda;
   -webkit-box-shadow: 5px 5px 25px rgba(100, 255, 218, 0.5);
-          box-shadow: 5px 5px 25px rgba(100, 255, 218, 0.5);
+  box-shadow: 5px 5px 25px rgba(100, 255, 218, 0.5);
 }
 
 .page-footer {
@@ -146,22 +146,27 @@ a:hover {
 
 .countdown {
   width: 100vw;
-  height: 110px;
+  height: 165px;
   z-index: 9;
   bottom: 0;
   margin-bottom: -30px;
   -webkit-box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
-          box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
+  box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
+}
+
+#countdown-text {
+  padding-top: 20px;
+  font-size: x-large;
 }
 
 .glow-light:hover {
   -webkit-box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
-          box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
+  box-shadow: 2px 2px 15px rgba(100, 255, 218, 0.5);
 }
 
 .glow-dark:hover {
   -webkit-box-shadow: 2px 2px 15px rgba(33, 33, 33, 0.5);
-          box-shadow: 2px 2px 15px rgba(33, 33, 33, 0.5);
+  box-shadow: 2px 2px 15px rgba(33, 33, 33, 0.5);
 }
 
 #landing-section {
@@ -184,7 +189,14 @@ a:hover {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#212121), color-stop(#64ffda), to(#212121));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#212121),
+    color-stop(#64ffda),
+    to(#212121)
+  );
   background: linear-gradient(to top, #212121, #64ffda, #212121);
 }
 
