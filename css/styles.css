@@ -12,7 +12,7 @@ body {
 }
 
 .yellow-accent {
-    color: #64FFDA;
+    color: #F77E29;
 }
 
 #main {
@@ -26,7 +26,7 @@ body {
 .landing-title {
     font-family: "Oswald", sans-serif;
     font-size: 8em;
-    color: #64FFDA;
+    color: #F77E29;
     overflow-x: hidden;
     /* background-color: white; */
 }
@@ -146,7 +146,7 @@ ul li a {
 /*Utility Classes*/
 
 .light-heading {
-    color: #64ffda;
+    color: #F77E29;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -160,7 +160,7 @@ ul li a {
 }
 
 .time-font {
-    color: #64ffda;
+    color: #F77E29;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
 }
@@ -173,26 +173,26 @@ ul li a {
 
 input[type=text]:focus:not([readonly]),
 input[type=tel]:focus:not([readonly]) {
-    border-bottom: 1px solid #64FFDA;
-    box-shadow: 0 1px 0 0 #64FFDA;
+    border-bottom: 1px solid #F77E29;
+    box-shadow: 0 1px 0 0 #F77E29;
 }
 
 input[type=text].valid, input[type=tel].valid {
-    border-bottom: 1px solid #64FFDA;
-    box-shadow: 0 1px 0 0 #64FFDA;
+    border-bottom: 1px solid #F77E29;
+    box-shadow: 0 1px 0 0 #F77E29;
 }
 
 input[type=text]:focus:not([readonly]) + label,
 input[type=tel]:focus:not([readonly]) + label {
-    color: #64FFDA;
+    color: #F77E29;
 }
 
 .input-field .prefix.active {
-    color: #64FFDA;
+    color: #F77E29;
 }
 
 ul li a.active {
-    color: #64FFDA;
+    color: #F77E29;
     background-color: rgba(250, 250, 250, 0.1);
 }
 
@@ -233,7 +233,7 @@ ul li a.active {
 #faq-section .collapsible-header:hover {
     border: 0px;
     box-shadow: none;
-    color: #64FFDA;
+    color: #F77E29;
     
 }
 
@@ -317,7 +317,7 @@ ul li a.active {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 2px solid #64FFDA;
+    border: 2px solid #F77E29;
     padding: 10px;
     /* background-color: #fafafa; */
     background-color: #fff;
