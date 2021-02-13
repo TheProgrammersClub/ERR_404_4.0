@@ -1,5 +1,5 @@
 body {
-  cursor: url(assets/cursors/cursors_orange/cursor.cur), auto;
+  cursor: url(assets/cursors/cursor.cur), auto;
 }
 
 a {
@@ -8,7 +8,7 @@ a {
 }
 
 a:hover {
-  color: #f77e29;
+  color: #67d861;
 }
 
 .sticky {
@@ -19,18 +19,18 @@ a:hover {
 .navbar--container {
   top: 15%;
   color: #212121;
-  background: #f77e29;
+  background: #67d861;
   left: 0;
   height: 250px;
   width: 80px;
-  -webkit-box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
-  box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
+  -webkit-box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
+  box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
   visibility: visible;
 }
 
 .navbar--icon:hover {
   color: #212121;
-  cursor: url(assets/cursors/cursors_orange/pointer.cur), default;
+  cursor: url(assets/cursors/pointer.cur), default;
 }
 
 .nb-icon {
@@ -61,8 +61,8 @@ a:hover {
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   opacity: 1;
-  -webkit-box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
-  box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
+  -webkit-box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
+  box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
   background: #212121;
   z-index: 8;
 }
@@ -74,13 +74,13 @@ a:hover {
 
 .nav--open-icon i {
   font-size: 1.8em;
-  color: #f77e29;
+  color: #67d861;
 }
 
 .nav--open-icon i:hover {
   color: #212121;
-  background: #f77e29;
-  cursor: url(assets/cursors/cursors_orange/pointer.cur), default;
+  background: #67d861;
+  cursor: url(assets/cursors/pointer.cur), default;
 }
 
 .nav--open-title {
@@ -89,7 +89,7 @@ a:hover {
   letter-spacing: 0.2em;
   text-align: center;
   margin-top: 10%;
-  color: #f77e29;
+  color: #67d861;
 }
 
 .nav--open-menu {
@@ -109,14 +109,14 @@ a:hover {
   font-size: 2em;
   font-weight: 100;
   padding: 15px 0;
-  color: #f77e29;
+  color: #67d861;
   text-decoration: none;
 }
 
 .nav--open-menu a:hover {
   background: #212121;
-  -webkit-box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
-  box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
+  -webkit-box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
+  box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
 }
 
 .close {
@@ -129,15 +129,15 @@ a:hover {
 
 #register {
   height: 100%;
-  background: #f77e29;
+  background: #67d861;
   color: #212121;
 }
 
 #register:hover {
   background: #212121;
-  color: #f77e29;
-  -webkit-box-shadow: 5px 5px 25px rgba(247 ,126, 41, 0.5);
-  box-shadow: 5px 5px 25px rgba(247 ,126, 41, 0.5);
+  color: #67d861;
+  -webkit-box-shadow: 5px 5px 25px rgba(103, 216, 97, 0.5);
+  box-shadow: 5px 5px 25px rgba(103, 216, 97, 0.5);
 }
 
 .page-footer {
@@ -150,8 +150,8 @@ a:hover {
   z-index: 9;
   bottom: 0;
   margin-bottom: -30px;
-  -webkit-box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
-  box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
+  -webkit-box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
+  box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
 }
 
 #countdown-text {
@@ -160,8 +160,8 @@ a:hover {
 }
 
 .glow-light:hover {
-  -webkit-box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
-  box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
+  -webkit-box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
+  box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
 }
 
 .glow-dark:hover {
@@ -175,7 +175,7 @@ a:hover {
 }
 
 .err404-btn {
-  color: #f77e29;
+  color: #67d861;
 }
 
 .err404-btn:hover {
@@ -194,10 +194,10 @@ a:hover {
     left bottom,
     left top,
     from(#212121),
-    color-stop(#f77e29),
+    color-stop(#67d861),
     to(#212121)
   );
-  background: linear-gradient(to top, #212121, #f77e29, #212121);
+  background: linear-gradient(to top, #212121, #67d861, #212121);
 }
 
 ::-webkit-scrollbar-track {
@@ -205,11 +205,11 @@ a:hover {
 }
 
 .glove a {
-  cursor: url(assets/cursors/cursors_orange/pointer.cur), default;
+  cursor: url(assets/cursors/pointer.cur), default;
 }
 
 #faq-section .collapsible-header:hover {
-  cursor: url(assets/cursors/cursors_orange/pointer.cur), default !important;
+  cursor: url(assets/cursors/pointer.cur), default !important;
 }
 
 .jfForm-background-mask {
