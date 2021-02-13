@@ -1,5 +1,5 @@
 body {
-  cursor: url(assets/cursors/cursors_orange/cursor.cur), auto;
+  cursor: url(assets/cursors/cursor.cur), auto;
 }
 
 a {
@@ -30,7 +30,7 @@ a:hover {
 
 .navbar--icon:hover {
   color: #212121;
-  cursor: url(assets/cursors/cursors_orange/pointer.cur), default;
+  cursor: url(assets/cursors/pointer.cur), default;
 }
 
 .nb-icon {
@@ -80,7 +80,7 @@ a:hover {
 .nav--open-icon i:hover {
   color: #212121;
   background: #67d861;
-  cursor: url(assets/cursors/cursors_orange/pointer.cur), default;
+  cursor: url(assets/cursors/pointer.cur), default;
 }
 
 .nav--open-title {
@@ -205,11 +205,11 @@ a:hover {
 }
 
 .glove a {
-  cursor: url(assets/cursors/cursors_orange/pointer.cur), default;
+  cursor: url(assets/cursors/pointer.cur), default;
 }
 
 #faq-section .collapsible-header:hover {
-  cursor: url(assets/cursors/cursors_orange/pointer.cur), default !important;
+  cursor: url(assets/cursors/pointer.cur), default !important;
 }
 
 .jfForm-background-mask {
