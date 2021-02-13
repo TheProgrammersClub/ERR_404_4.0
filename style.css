@@ -23,8 +23,8 @@ a:hover {
   left: 0;
   height: 250px;
   width: 80px;
-  -webkit-box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
-  box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
+  -webkit-box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
+  box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
   visibility: visible;
 }
 
@@ -61,8 +61,8 @@ a:hover {
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   opacity: 1;
-  -webkit-box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
-  box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
+  -webkit-box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
+  box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
   background: #212121;
   z-index: 8;
 }
@@ -115,8 +115,8 @@ a:hover {
 
 .nav--open-menu a:hover {
   background: #212121;
-  -webkit-box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
-  box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
+  -webkit-box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
+  box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
 }
 
 .close {
@@ -136,8 +136,8 @@ a:hover {
 #register:hover {
   background: #212121;
   color: #67d861;
-  -webkit-box-shadow: 5px 5px 25px rgba(247 ,126, 41, 0.5);
-  box-shadow: 5px 5px 25px rgba(247 ,126, 41, 0.5);
+  -webkit-box-shadow: 5px 5px 25px rgba(103, 216, 97, 0.5);
+  box-shadow: 5px 5px 25px rgba(103, 216, 97, 0.5);
 }
 
 .page-footer {
@@ -150,8 +150,8 @@ a:hover {
   z-index: 9;
   bottom: 0;
   margin-bottom: -30px;
-  -webkit-box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
-  box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
+  -webkit-box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
+  box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
 }
 
 #countdown-text {
@@ -160,8 +160,8 @@ a:hover {
 }
 
 .glow-light:hover {
-  -webkit-box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
-  box-shadow: 2px 2px 15px rgba(247 ,126, 41, 0.5);
+  -webkit-box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
+  box-shadow: 2px 2px 15px rgba(103, 216, 97, 0.5);
 }
 
 .glow-dark:hover {
