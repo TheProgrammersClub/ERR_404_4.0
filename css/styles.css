@@ -31,11 +31,15 @@ body {
     /* background-color: white; */
 }
 
+div.carousel{
+    height: 500px !important;
+}
+
 .landing-title img {
     /* height: 100%; */
-    width: 768px; 
+    /*width: 768px; */
     position: relative;
-    left: 3%;
+    left: 1%;
     /* transform: translateX(-40%);      */
 }
 
