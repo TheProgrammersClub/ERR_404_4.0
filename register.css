@@ -22,7 +22,7 @@ label {
 input {
   font-size: 1.5rem !important;
   font-weight: bold;
-  caret-color: #64ffda;
+  caret-color: #67d861;
   cursor: url(assets/cursors/input.cur), default !important;
 }
 
@@ -61,8 +61,8 @@ input {
 }
 
 /* [type="radio"] + label:hover {
-    border-color: #64ffda !important;
-    text-shadow: #64ffda !important;
+    border-color: #67d861 !important;
+    text-shadow: #67d861 !important;
 } */
 
 [type="radio"] + label:after {
@@ -70,5 +70,5 @@ input {
     margin:-5px !important;
   height: 30px !important;
   width: 30px !important;
-  background-color: #64ffda;
+  background-color: #67d861;
 }
