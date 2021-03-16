@@ -11,8 +11,8 @@ function setSmartInterval(intervalEventCallback, t, interval, endCallback=null) 
 
 // TODO: Change to event date
 let start_date = new Date(2021, 2, 20, 7, 0, 0, 0);
-let end_date = new Date(2021, 2, 21, 16, 0, 0, 0);
-let result_date = new Date(2021, 2, 21, 17, 0, 0, 0);
+let end_date = new Date(2021, 2, 21, 17, 0, 0, 0);
+let result_date = new Date(2021, 2, 21, 19, 30, 0, 0);
 
 function countDownTimerCallback(t) {
 
