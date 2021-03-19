@@ -323,7 +323,7 @@ ul li a.active {
 .sponsors-img {
     width: 90%;
     margin-left: 5%;
-    /*max-width: 100px;*/
+    max-width: 300px;
 }
 
 .side-gfx {
